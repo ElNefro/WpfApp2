@@ -13,8 +13,8 @@
         <Grid.RowDefinitions>
 
             <RowDefinition Height="60*"></RowDefinition>
-            <RowDefinition Height="243*"></RowDefinition>
-            <RowDefinition Height="131*"></RowDefinition>
+            <RowDefinition Height="295*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
 
         </Grid.RowDefinitions>
 
@@ -29,26 +29,64 @@
 
         <StackPanel Grid.Column="1">
 
-            <Label FontSize="24" FontWeight="Bold" Foreground="Red">Регистрация</Label>
+            <TextBlock FontSize="20" TextAlignment="Center">
+                <Run FontWeight="Bold" Foreground="red">Регистрация</Run>
+                сотрудников
+                <LineBreak />
+                компании
+            </TextBlock>
 
-            <TextBlock>сотрудников компании</TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" >
+            
+            <Label >Логин:</Label>
+            <TextBox>Login</TextBox>
+            <Label>Пароль:</Label>
+            <PasswordBox></PasswordBox>
+            <Label>Повторите пароль:</Label>
+            <PasswordBox PasswordChar="#"></PasswordBox>
+            <Label>Должность:</Label>
+            <ComboBox>
+                <ComboBoxItem IsSelected="True">
+                    <TextBlock>Администратор</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Уборщик</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Сантехник</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Водитель</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Менеджер</TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+
+            <Label>Комментарий:</Label>
+            <TextBox VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" AcceptsReturn="True" MaxLines="3">
+                Это очень инвормативный комментарий про сотрудника.
+            </TextBox>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <Label>Отзывы на поддержку </Label>
         </StackPanel>
 
 
 
+        <StackPanel Grid.ColumnSpan="2"  Grid.Row="2" VerticalAlignment="Top" Height="75"  >
 
-
-
-
-        <StackPanel Grid.ColumnSpan="2"  Grid.Row="2" Margin="0,2,0,0"  >
-
-            <Button Content="Зарегестрировать" Height="55" Width="200" Margin="38" Background="#FF5AA56C"></Button>
+            <Button  Content="Зарегестрировать" Height="55" Width="200" Margin="10" Background="#FF5AA56C"></Button>
 
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Grid.ColumnSpan="2"  Grid.Row="2" Margin="0,2,0,0" >
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="2"  Grid.Row="2" VerticalAlignment="Bottom" Height="75">
 
-            <Button Content="Отменить" Height="55" Width="200" Margin="38" Background="#FFC85B5B" ></Button>
+            <Button Content="Отменить" Height="55" Width="200" Margin="10" Background="#FFC85B5B" ></Button>
 
         </StackPanel>
 
