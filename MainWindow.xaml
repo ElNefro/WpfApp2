@@ -73,12 +73,62 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1">
-            <Label>Отзывы на поддержку </Label>
+            <Label FontSize="20" >Отзывы на поддержку</Label>
+
+ 
+            <StackPanel>
+                <ListBox>
+                    <TextBlock>
+                        <Run FontSize="17">Демин Александр Ильич</Run>
+                        <LineBreak />
+                        До него смогли дозвониться
+                    </TextBlock>
+                    <TextBlock>
+                        <Run FontSize="17">Павлов Анатолий Кринделевич</Run>
+                        <LineBreak />
+                        Смог дозвониться до тех поддержки за 7 минут
+                    </TextBlock>
+                    <TextBlock>
+                        <Run FontSize="17">Харитонов Шамиль Ереванович</Run>
+                        <LineBreak />
+                        Не дозвонился, но решил все сам
+                    </TextBlock>
+                </ListBox>
+            </StackPanel>
+
+            
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <Label FontSize="20" >Техническая поддержка</Label>
+
+
+            <StackPanel>
+                <ListBox>
+                    <TextBlock>
+                        <Run FontSize="17">Демин Александр Ильич</Run>
+                        <LineBreak />
+                        +7 (902) 865-98-66
+                    </TextBlock>
+                    <TextBlock>
+                        <Run FontSize="17">Жар Агон Адонович</Run>
+                        <LineBreak />
+                        +7 (956) 785-87-21
+                    </TextBlock>
+                    <TextBlock>
+                        <Run FontSize="17">Запальнов Норман Никитич</Run>
+                        <LineBreak />
+                        +7 (960) 464-78-30
+                    </TextBlock>
+                </ListBox>
+            </StackPanel>
+
+
         </StackPanel>
 
 
 
-        <StackPanel Grid.ColumnSpan="2"  Grid.Row="2" VerticalAlignment="Top" Height="75"  >
+        <StackPanel Grid.ColumnSpan="2"  Grid.Row="2" VerticalAlignment="Bottom" Height="75"  >
 
             <Button  Content="Зарегестрировать" Height="55" Width="200" Margin="10" Background="#FF5AA56C"></Button>
 
